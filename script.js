@@ -1,5 +1,5 @@
-const computerSelection = computerPlay();
-const playerSelection = prompt( "Rock, Paper, or Scissors: ").toUpperCase();
+computerSelection = computerPlay();
+playerSelection = prompt( "Rock, Paper, or Scissors: ").toUpperCase();
 
 // function randomly returns either Rock, Paper, or Scissors
 
@@ -66,6 +66,8 @@ function game(){
     for (let i = 0; i < 5; i++) {
         endgameStr = playRound( playerSelection, computerSelection );
         console.log( endgameStr );
+        computerSelection = computerPlay()
+        playerSelection = prompt( "Rock, Paper, or Scissors: ").toUpperCase();
      }
 }
 

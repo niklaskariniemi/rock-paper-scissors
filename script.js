@@ -4,16 +4,13 @@ playerSelection = prompt( "Rock, Paper, or Scissors: ").toUpperCase();
 // function randomly returns either Rock, Paper, or Scissors
 
 function computerPlay() {
-    rock = 0;
-    paper = 1;
-    scissors = 2;
     randNum = Math.floor(Math.random() * 3);
 
-    if ( randNum == rock ) 
+    if ( randNum == 0 ) 
     {
         returnVal = "ROCK";
     }
-    else if ( randNum == paper )
+    else if ( randNum == 1 )
     {
         returnVal = "PAPER";
     } 

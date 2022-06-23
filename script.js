@@ -1,6 +1,3 @@
-//computerSelection = computerPlay();
-//playerSelection = prompt( "Rock, Paper, or Scissors: ").toUpperCase();
-
 // function randomly returns either Rock, Paper, or Scissors
 
 function computerPlay() {

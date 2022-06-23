@@ -54,7 +54,13 @@ function playRound( playerSelection, computerSelection ) {
         returnStr = "Tie! Try again";
     }
 
-    console.log(returnStr)
+    // display results
+    const container = document.querySelector('#game-results');
+    const div = document.createElement('div');
+    div.style.cssText = 'color: blue; background: #ffebcd; padding: 25px';          
+    div.textContent = returnStr;
+    container.appendChild( div );
+
     return returnStr;
 }
 

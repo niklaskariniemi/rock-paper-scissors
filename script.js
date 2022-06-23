@@ -1,5 +1,5 @@
-computerSelection = computerPlay();
-playerSelection = prompt( "Rock, Paper, or Scissors: ").toUpperCase();
+//computerSelection = computerPlay();
+//playerSelection = prompt( "Rock, Paper, or Scissors: ").toUpperCase();
 
 // function randomly returns either Rock, Paper, or Scissors
 
@@ -54,5 +54,30 @@ function playRound( playerSelection, computerSelection ) {
         returnStr = "Tie! Try again";
     }
 
+    console.log(returnStr)
     return returnStr;
 }
+
+// event listners for the rock button
+const btn1 = document.querySelector('#rock-btn');
+btn1.addEventListener('click', () => {
+    playerSelection = "ROCK";
+    computerSelection = computerPlay();
+    playRound( playerSelection, computerSelection );
+});
+
+// event listners for the rock button
+const btn2 = document.querySelector('#paper-btn');
+btn2.addEventListener('click', () => {
+    playerSelection = "ROCK";
+    computerSelection = computerPlay();
+    playRound( playerSelection, computerSelection );
+});
+
+// event listners for the rock button
+const btn3 = document.querySelector('#scissors-btn');
+btn3.addEventListener('click', () => {
+    playerSelection = "ROCK";
+    computerSelection = computerPlay();
+    playRound( playerSelection, computerSelection );
+});

@@ -56,18 +56,3 @@ function playRound( playerSelection, computerSelection ) {
 
     return returnStr;
 }
-
-// function will play the game
-
-function game(){
-    for (let i = 0; i < 5; i++) {
-        endgameStr = playRound( playerSelection, computerSelection );
-        console.log( endgameStr );
-        computerSelection = computerPlay()
-        playerSelection = prompt( "Rock, Paper, or Scissors: ").toUpperCase();
-     }
-}
-
-// play the game
-
-game()

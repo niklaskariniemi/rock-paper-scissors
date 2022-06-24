@@ -25,3 +25,14 @@ h1 {
     font-size: 25px;
     cursor: pointer;
 }
+
+.results{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100px;
+    width: 275px;
+    margin-top: 14px;
+    background-color:#ffebcd;
+    font-size: 16px;
+}

@@ -61,6 +61,13 @@ function playRound( playerSelection, computerSelection ) {
         returnStr = "Tie! Try again";
     }
 
+    //display score
+    const player = document.querySelector('#score-player');
+    player.innerText = "Player: " + playerPts;
+
+    const computer = document.querySelector('#score-computer');
+    computer.innerText = "Computer: " + computerPts;
+
     // check win condition
     if ( playerPts == 5 )
     {

@@ -36,3 +36,15 @@ h1 {
     background-color:#ffebcd;
     font-size: 16px;
 }
+
+.score{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    height: 300px;
+    width: 275px;
+    margin-top: 14px;
+    background-color:#ffebcd;
+    font-size: 18px;
+}

@@ -2,6 +2,16 @@
 let computerPts = 0;
 let playerPts = 0;
 
+// initialize results and score section
+let container = document.querySelector('#game-results');
+container.innerText = "Good luck noob!";
+
+let player = document.querySelector('#score-player');
+player.innerText = "Player: " + playerPts;
+
+let computer = document.querySelector('#score-computer');
+computer.innerText = "Computer: " + computerPts;
+
 // function randomly returns either Rock, Paper, or Scissors
 
 function computerPlay() {
@@ -22,6 +32,8 @@ function computerPlay() {
 
     return returnVal;
 }
+
+// function that resets the game
 
 // function that plays a single round
 
